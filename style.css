@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid green; */
+}
+body {
+  background-color: #333333;
+}
+header {
+  color: #f5f5f5;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #2d2d2d;
+}
+.top {
+  height: 250px;
+  background-color: #333333;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 2% 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.input-styler {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #333333;
+  position: relative;
+  margin: auto 0;
+}
+.input-styler input {
+  width: 60%;
+  padding-left: 2.5%;
+}
+.input-styler img {
+  margin-left: 2%;
+}
+input:focus {
+  outline: none;
+}
+.todo-side {
+  margin-top: 20px;
+}
+.todo-side input {
+  text-align: center;
+  border: none;
+}
+.todo-wrapper {
+  background-color: whitesmoke;
+}
+.todo-side {
+  width: 80%;
+  text-align: center;
+  background-color: whitesmoke;
+  align-items: center;
+}
+.list-items {
+  margin-bottom: 10px;
+  border-right: 4px solid #9c1de7;
+  border-left: 4px solid #9c1de7;
+  word-wrap: break-word;
+  /* border-radius: 8px; */
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-items:last-child {
+  margin-bottom: 0;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.strike-through {
+  text-decoration: line-through;
+}
