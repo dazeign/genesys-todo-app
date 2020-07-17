@@ -66,27 +66,33 @@ input:focus {
 .todo-side {
   width: 80%;
   text-align: center;
-  background-color: whitesmoke;
   align-items: center;
 }
-.list-items {
-  margin-bottom: 10px;
-  border-right: 4px solid #9c1de7;
-  border-left: 4px solid #9c1de7;
-  word-wrap: break-word;
-  /* border-radius: 8px; */
-  height: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.list-items:last-child {
-  margin-bottom: 0;
-}
-.icons {
-  display: flex;
-  justify-content: center;
+.todo-input {
+  background: #333333;
+  font-size: 1.2em;
 }
 .strike-through {
   text-decoration: line-through;
+}
+.card {
+  height: 100px;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #838383;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px 45px;
+}
+.todo-input {
+  height: 65px;
+  width: 80%;
+}
+.input-svg {
+  margin-left: 2%;
+  width: 25px;
+  cursor: pointer;
 }

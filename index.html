@@ -18,10 +18,37 @@
             id="input-todo-item"
             placeholder="What do you want to do...?"
           />
-          <img src="icon.svg" alt="icon" />
+          <img src="icon.svg" alt="icon" onclick="addTodo(event)" />
         </div>
       </div>
-      <div class="todo-side"></div>
+      <div class="todo-side">
+        <div class="card">
+          <input
+            type="text"
+            value="Name"
+            disabled
+            class="todo-input strike-through"
+          />
+          <img
+            src="add.svg"
+            alt="edit"
+            onclick="editTodo(event)"
+            class="input-svg"
+          />
+          <img
+            src="delete.svg"
+            alt="delete"
+            onclick="deleteTodo(event)"
+            class="input-svg"
+          />
+          <img
+            src="check.svg"
+            alt="delete"
+            onclick="clearTodo(event)"
+            class="input-svg"
+          />
+        </div>
+      </div>
     </div>
 
     <script src="app.js"></script>
